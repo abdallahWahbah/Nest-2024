@@ -1,0 +1,14 @@
+### List all messages
+GET http://localhost:3000/messages
+
+### Create a new message 
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+    "theBody": "make sure to make an empty line between headers and body",
+    "content": "hi theres"
+}
+
+### get one message
+GET http://localhost:3000/messages/995
