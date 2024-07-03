@@ -1,0 +1,48 @@
+### create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@react.com",
+    "password": "asdasdasd"
+}
+
+### signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "old@react.com",
+    "password": "asdasdasd"
+}
+
+### Get the currently signed in user
+Get http://localhost:3000/auth/whoami
+
+### signout
+POST http://localhost:3000/auth/signout
+
+### Find a user with ID
+GET http://localhost:3000/auth/2
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=abdallah@react.com
+
+### Delete a user with a given ID
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email": "abdallah@react.com",
+    "password": "asdasdasd"
+}
+
+### Set a color
+GET http://localhost:3000/auth/colors/red
+
+### Get a color
+GET http://localhost:3000/auth/colors
